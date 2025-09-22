@@ -1,0 +1,13 @@
+<form (ngSubmit)="transfer()">
+  <label> To Account</label>
+  <input [(ngModel)]="toAccount" name="toAccount" required/>
+  <label>Amount:</label>
+  <input [(ngModel)]="amount" name="amount" type="number" required/>
+  <label>Type:</label>
+  <select name="type" [(ngModel)]="type">
+    <option value="credit">Credit</option>
+    <option value="debit">Debit</option>
+  </select>
+  <button type="submit">Transfer</button>
+
+</form>

@@ -1,0 +1,56 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d6efd;
+  color: white;
+  padding: 15px 30px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  padding: 6px 8px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffc107;
+  border-bottom: 2px solid #ffc107;
+}
+
+.logout {
+  color: #ffdddd;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout:hover {
+  color: #ff4d4d;
+  border-bottom: 2px solid #ff4d4d;
+}
+h6{
+  color:rgb(34, 11, 11);
+}

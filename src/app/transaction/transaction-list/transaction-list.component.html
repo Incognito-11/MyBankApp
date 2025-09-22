@@ -1,0 +1,8 @@
+<h2>Last 10 Transactions</h2>
+<ul>
+  <li *ngFor="let tx of transactions">
+    <span [class.credit]="tx.type==='credit'" [class.debit]="tx.type==='debit'">
+      {{ tx.date }} - {{ tx.type }} - ₹{{ tx.amount }}
+    </span>
+  </li>
+</ul>

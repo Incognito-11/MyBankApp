@@ -1,0 +1,87 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "john_doe",
+      "password": "password123",
+      "cifNumber": "CIF1001",
+      "accountId": 1
+    },
+    {
+      "id": "2",
+      "username": "jane_smith",
+      "password": "secure456",
+      "cifNumber": "CIF1002",
+      "accountId": 2
+    },
+    {
+      "id": 0,
+      "username": "anil_m",
+      "password": "anil123",
+      "cifNumber": "74870474",
+      "accountId": 3655663983
+    }
+  ],
+  "accounts": [
+    {
+      "id": "1",
+      "accountNumber": "ACCT10001",
+      "cifNumber": "CIF1001",
+      "balance": 1500,
+      "userId": 1
+    },
+    {
+      "id": "2",
+      "accountNumber": "ACCT10002",
+      "cifNumber": "CIF1002",
+      "balance": 2000,
+      "userId": 2
+    }
+  ],
+  "transactions": [
+    {
+      "id": "1",
+      "type": "debit",
+      "amount": 200,
+      "date": "2025-07-01T10:00:00Z",
+      "fromUser": "john_doe",
+      "toAccount": "ACCT10002"
+    },
+    {
+      "id": "2",
+      "type": "credit",
+      "amount": 200,
+      "date": "2025-07-01T10:00:00Z",
+      "fromUser": "john_doe",
+      "toAccount": "ACCT10002"
+    },
+    {
+      "id": "3",
+      "type": "debit",
+      "amount": 100,
+      "date": "2025-07-10T14:20:00Z",
+      "fromUser": "jane_smith",
+      "toAccount": "ACCT10001"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "message": "Your account was credited with $200.",
+      "date": "2025-07-01T10:05:00Z",
+      "userId": 2
+    },
+    {
+      "id": "2",
+      "message": "You debited $200 to ACCT10002.",
+      "date": "2025-07-01T10:05:00Z",
+      "userId": 1
+    },
+    {
+      "id": "3",
+      "message": "You debited $100 to ACCT10001.",
+      "date": "2025-07-10T14:30:00Z",
+      "userId": 2
+    }
+  ]
+}
